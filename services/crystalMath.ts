@@ -24,7 +24,7 @@ const getAtomsForCell = (lattice: LatticeType, ox: number, oy: number, oz: numbe
 
   if (lattice === 'FCC') {
     // Face Centers
-    // FIX: used to use 'ox' for z-offset by mistake in previous versions
+    // Corrected Z-offset usage here: using 'oz' instead of 'ox'
     atoms.push({ id: `f-xy-0-${ox}-${oy}-${oz}`, x: ox + 0.5, y: oy + 0.5, z: oz + 0, variant: 'face' });
     atoms.push({ id: `f-xy-1-${ox}-${oy}-${oz}`, x: ox + 0.5, y: oy + 0.5, z: oz + 1, variant: 'face' });
     

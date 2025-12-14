@@ -11,7 +11,7 @@ interface ControlPanelProps {
 }
 
 const ControlPanel: React.FC<ControlPanelProps> = ({ 
-  lattice, setLattice, voidType, setVoidType 
+  lattice, setLattice, voidType, setVoidType
 }) => {
   return (
     <div className="absolute top-4 left-4 p-4 bg-slate-900/90 backdrop-blur-md rounded-xl border border-slate-700 shadow-xl max-w-xs text-slate-200 select-none">

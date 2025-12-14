@@ -141,7 +141,7 @@ const CrystalScene: React.FC<CrystalCanvasProps> = ({ lattice, voidType, onVoidS
 
 export default function CrystalCanvas(props: CrystalCanvasProps) {
   return (
-    <div className="w-full h-full bg-slate-900 cursor-move">
+    <div className="w-full h-full bg-slate-900 cursor-default">
       <Canvas camera={{ position: [3.5, 3.5, 3.5], fov: 40 }}>
         <CrystalScene {...props} />
       </Canvas>

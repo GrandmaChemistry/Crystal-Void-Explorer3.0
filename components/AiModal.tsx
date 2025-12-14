@@ -39,7 +39,8 @@ const AiModal: React.FC<AiModalProps> = ({ isOpen, onClose, lattice, voidType })
     请保持简洁，适合在网页侧边栏展示。`;
 
     try {
-      const apiKey = process.env.API_KEY; 
+      // Safely access env variable
+      const apiKey = (typeof process !== 'undefined' && process.env) ? process.env.API_KEY : '';
       
       if (!apiKey) {
           await new Promise(r => setTimeout(r, 1000));
